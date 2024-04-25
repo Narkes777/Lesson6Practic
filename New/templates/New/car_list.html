@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car posts</title>
+</head>
+<body>
+    <h1>Cars</h1>
+    {% for car in car_list %}
+    <p>----</p>
+    <p>{{ car.id }}</p>
+    <p>{{ car.title }}</p>
+    <p>{{ car.content }}</p>
+    {% endfor %}
+</body>
+</html>

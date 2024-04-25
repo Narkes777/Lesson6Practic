@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manufacturer posts</title>
+</head>
+<body>
+    <h1>Manufacturers</h1>
+    {% for manufacturer in manufacturer_list %}
+    <p>----</p>
+    <p>{{ manufacturer.id }}</p>
+    <p>{{ manufacturer.title }}</p>
+    <p>{{ manufacturer.content }}</p>
+    {% endfor %}
+</body>
+</html>
